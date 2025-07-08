@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--Part 4: Navigation Bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Knowledge Check | Bootstrap Basics</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <h2 class="text-center">Assignment 3: Knowledge Check | Bootstrap Basics</h2>
+    <p class="text-center">In this assignment, you will create a simple HTML page with a form that allows users to enter their first and last names, their email address, and a password. The form will include a submit button that, when clicked, will display the entered information below the form.</p>
+    <!--Part 1: Form Creation and Layout-->
+<form id="userForm">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">User Information Form</h2>
+            </div>
+        </div>
+    <div class="row">
+        <div class="mb-3 col-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+        </div>
+        <div class="mb-3 col-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+        </div>
+    </div>
+        <div class="mb-3 col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3 col-12">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+        </div>
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>
+    <!--Part 2: Table for Displaying Data-->
+<div class="table-responsive">
+<table class="table table-hover">
+    <caption>User Information</caption>
+    <thead class="table-dark">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody id="userTableBody">
+        <tr>
+            <td>Alena</td>
+            <td>Phan</td>  
+            <td>alenap@example.com</td>
+        </tr>
+        <tr>
+            <td>Lee</td>
+            <td>Lynn</td>
+            <td>leel@example.com</td>
+        </tr>
+        <tr>
+            <td>Drew</td>
+            <td>King</td>
+            <td>drewk@example.com</td>
+        </tr>
+    </tbody>
+
+</table>
+<p class="text-center">Bellow are some cool images, dont forget to feed Dave.</p>
+    <!--Part 3: Image and Button Utilities-->
+<div class="container-fluid">
+    <img src="images/coding-picture.webp" class="img-fluid" alt="coding-picture">
+</div>
+<div class="container-fluid">
+    <img src="images/dave.jpeg" class="rounded-circle" alt="behold dave" width="200" height="200">
+</div>
+
+    <button class="btn btn-outline-success d-md-block" onclick="location.href='index.html'">Back to top</button>
+    <button class="btn btn-outline-success d-none"> Feed Dave</button>
+
+    <!--Footer Section because I wanted a footer section-->
+<hr class="my-4">
+<footer class="mt-4">
+    <div class="container text-center">
+        <p class="text-muted">© 2025 Coding Temple Knowledge Check | Bootstrap Basics</p>
+    </div>
+</footer>
+</body>
